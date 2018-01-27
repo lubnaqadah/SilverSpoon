@@ -18,7 +18,11 @@ app.use(express.static("client/build"));
 app.use(require("./routes"))
 
 
-
+if (process.env.NODE_ENV === "production") {
+ app.use(express.static("client/build"));
+} else {
+ app.use(express.static(__dirname + "/client/public"));
+}
 // Start the API server
 
 db.sequelize.sync({ force: false }).then(function() {
