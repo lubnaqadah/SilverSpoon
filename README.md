@@ -1,62 +1,27 @@
-# Create React Express App
+# Silver Spoon
 
-## About This Boilerplate
+## Gift Registry App
 
-This setup allows for a monolithic Node/Express/React app which can be easily deployed to Heroku.
+gift registry app that aims to help the user to create a wish list of gifts they want to receive for any occasion. As well as allows the user to review and purchase gifts for other user's lists that they previously created.
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+The visiting users will be able to browse and purchase items on the list as will as leaving comments for the owner of the list.
+It supports sharing on the main social media platforms, in addition to provid a sharing URL.
 
-## Starting the app locally
+***
 
-Start by installing front and backend dependencies. While in this directory, run the following commands:
+#### Technologies Used:
+***
 
-```
-yarn install
-cd client
-yarn install
-cd ..
-``
 
-After both installations complete, run the following command in your terminal:
-
-```
-yarn start
-```
-
-That's it, your app should be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
-
-## Deployment (Heroku)
-
-### Create a Git Repo
-
-Once you're ready to deploy, start by making sure your project is a git repository. If so, proceed to the next section, otherwise run the following commands in your terminal:
-
-```
-git init
-git add .
-git commit -m "Initial commit"
-```
-
-### Heroku
-
-Make sure that you have a Heroku app created for this project. If so, proceed to the next section, otherwise run the following command in your terminal:
-
-```
-heroku create
-```
-
-Optionally add an argument for your application's name after `create`, e.g.
-
-```
-heroku myawesomeapp
-```
-
-### Deploying
-
-After confirming that you have an up to date git repository and a Heroku app created, run the following command to deploy:
-
-```
-yarn deploy
-```
-
-If all previous steps were followed correctly, your application should be deployed to Heroku!
+* React
+* ExpressJS
+* Amzone product API
+* nodeJS
+* MySQL
+* npm packages:
+	- mysql
+	- axios
+	- apac
+	- sequelize
+	- body-parser
+	
